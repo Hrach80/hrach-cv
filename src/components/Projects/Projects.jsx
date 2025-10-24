@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLink } from 'react-icons/fa';
@@ -10,18 +8,32 @@ import './Projects.scss';
 const Projects = () => {
     const { t } = useTranslation();
     const [loadingId, setLoadingId] = useState(null);
+
+    // Ֆունկցիան ուղղված է iOS-ի համար
     const handleLiveClick = (url, id, type) => {
-        const uniqueId = `${id}-${type}`; 
+        const uniqueId = `${id}-${type}`;
+
         if (loadingId === uniqueId) return;
+
         setLoadingId(uniqueId);
+
+        // ՔԱՅԼ 1: Սահմանում ենք 1.5 վրկ ուշացում անիմացիայի համար
         setTimeout(() => {
-            window.open(url, '_blank', 'noopener noreferrer');
+            // ՔԱՅԼ 2: Թաքցնում ենք անիմացիան
             setLoadingId(null);
+
+            // ՔԱՅԼ 3: Անմիջապես բացում ենք հղումը նույն ներդիրում
+            // window.location.href-ն ավելի հուսալի է, քան window.open-ը 
+            // setTimeout-ի ներսում iOS-ի վրա։
+            window.location.href = url;
         }, 1500);
     };
+
+    // ... (renderButtonContent-ը մնում է անփոփոխ)
     const renderButtonContent = (id, isGithub = false) => {
         const type = isGithub ? 'github' : 'live';
         const uniqueId = `${id}-${type}`;
+
         if (loadingId === uniqueId) {
             return <div className="circular-loader" />;
         }
