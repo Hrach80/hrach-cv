@@ -16,7 +16,7 @@ const contactInfo = [
     { name: 'Phone', value: '+374 94 39 52 21', icon: FaPhoneAlt, link: 'tel:+37494 39 52 21' },
     { name: 'Email', value: 'hrachyavagarshakyan@gmail.com', icon: FaEnvelope, link: 'mailto:hrachyavagarshakyan@gmail.com' },
     { name: 'Viber', value: '+374 94 39 52 21', icon: FaViber, link: 'viber://chat?number=+374 94 39 52 21' },
-    { name: 'WhatsApp', value: '+374 94 39 52 21', icon: FaWhatsapp, link: 'https://wa.me/+374 94 39 52 21' },
+    { name: 'WhatsApp', value: '+374 94 39 52 21', icon: FaWhatsapp, link: 'https://wa.me/37494395221'},
     { name: 'Telegram', value: '@Hrachvagharshakyan', icon: FaTelegramPlane, link: 'https://t.me/Hrachvagharshakyan' },
 ];
 
