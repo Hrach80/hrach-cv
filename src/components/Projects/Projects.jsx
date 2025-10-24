@@ -17,7 +17,6 @@ const Projects = () => {
 
         setLoadingId(uniqueId);
 
-        // ՔԱՅԼ 1: Սահմանում ենք 1.5 վրկ ուշացում անիմացիայի համար
         setTimeout(() => {
             // ՔԱՅԼ 2: Թաքցնում ենք անիմացիան
             setLoadingId(null);

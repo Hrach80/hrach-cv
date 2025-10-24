@@ -8,15 +8,15 @@ import './Hero.scss';
 
 const socialIcons = [
     { name: 'Facebook', url: 'https://www.facebook.com/uxevorapoxadrumner.hayastanivoxjtaracqum/', icon: FaFacebookF },
-    { name: 'Instagram', url: 'https://instagram.com/yourprofile', icon: FaInstagram },
+    { name: 'Instagram', url: 'https://instagram.com/hrachya_vagharshakyan', icon: FaInstagram },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/hrachya-vagarshakyan-39424337b/', icon: FaLinkedinIn },
 ];
 
 const contactInfo = [
-    { name: 'Phone', value: '+374 94 38 52 21', icon: FaPhoneAlt, link: 'tel:+37494 38 52 21' },
+    { name: 'Phone', value: '+374 94 39 52 21', icon: FaPhoneAlt, link: 'tel:+37494 39 52 21' },
     { name: 'Email', value: 'hrachyavagarshakyan@gmail.com', icon: FaEnvelope, link: 'mailto:hrachyavagarshakyan@gmail.com' },
-    { name: 'Viber', value: '+374 94 38 52 21', icon: FaViber, link: 'viber://chat?number=+374 94 38 52 21' },
-    { name: 'WhatsApp', value: '+374 94 38 52 21', icon: FaWhatsapp, link: 'https://wa.me/+374 94 38 52 21' },
+    { name: 'Viber', value: '+374 94 39 52 21', icon: FaViber, link: 'viber://chat?number=+374 94 39 52 21' },
+    { name: 'WhatsApp', value: '+374 94 39 52 21', icon: FaWhatsapp, link: 'https://wa.me/+374 94 39 52 21' },
     { name: 'Telegram', value: '@Hrachvagharshakyan', icon: FaTelegramPlane, link: 'https://t.me/Hrachvagharshakyan' },
 ];
 
@@ -49,7 +49,7 @@ const Hero = () => {
                                 rel="noopener noreferrer"
                                 className="contact-item"
                             >
-                                <contact.icon size={20} />
+                                <contact.icon size={35} />
                             </a>
                         ))}
                     </div>
