@@ -1,0 +1,35 @@
+
+:root {
+  --color-primary: #00ff88;
+  --color-secondary: #0a0a0a;
+  --color-dark: #121212;
+  --color-text-light: #f0f0f0;
+  --color-text-dim: #999999;
+  --color-shadow: rgba(0, 255, 136, 0.2);
+  --font-family-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-main);
+  background-color: var(--color-dark);
+  color: var(--color-text-light);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  color: #00cc6a;
+}
