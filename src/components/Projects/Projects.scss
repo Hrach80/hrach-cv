@@ -49,14 +49,24 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(189, 255, 253, 0.2);
+        border: 1px solid rgba(0, 255, 255, 0.3);
+        border-top-color: #00ffff;
+        border-left-color: #00e0e0;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        box-shadow: 0 0 3px #00a0a0, 0 0 10px #00ffff;
     transition: all 0.8s;
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
 
     &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(30, 255, 180, 0.2);
+    border: 1px solid rgba(255, 0, 85, 0.3);
+        border-top-color: #ff3333;
+        border-left-color: #ff0000;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        box-shadow: 0 0 3px #ff0055, 0 0 12px #ff0055;
 
         &::before {
             opacity: 1;

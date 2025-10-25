@@ -18,12 +18,7 @@ const Projects = () => {
         setLoadingId(uniqueId);
 
         setTimeout(() => {
-            // ՔԱՅԼ 2: Թաքցնում ենք անիմացիան
             setLoadingId(null);
-
-            // ՔԱՅԼ 3: Անմիջապես բացում ենք հղումը նույն ներդիրում
-            // window.location.href-ն ավելի հուսալի է, քան window.open-ը 
-            // setTimeout-ի ներսում iOS-ի վրա։
             window.location.href = url;
         }, 1500);
     };

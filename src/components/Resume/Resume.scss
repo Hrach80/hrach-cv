@@ -114,8 +114,12 @@
     font-size: 1rem;
     padding: 10px;
     border-radius: 5px;
-    background-color: var(--color-dark-background);
-    border-left: 3px solid var(--color-primary);
+        border: 3px solid rgba(0, 153, 255, 0.3);
+        border-top-color: #076eff;
+        border-left-color: #0077ff;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        box-shadow: 0 0 3px #00aaff, 0 0 10px #00aaff;
     transition: transform 0.3s ease;
     
     &:hover {
@@ -123,7 +127,13 @@
     }
     
     .skill-icon {
-        color: var(--color-primary);
+    border: 2px solid rgba(255, 0, 85, 0.3);
+        border-top-color: #ff3333;
+        border-left-color: #ff0000;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        box-shadow: 0 0 3px #ff0055, 0 0 12px #ff0055;
+        border-radius: 50px;
     }
 }
 
@@ -138,8 +148,12 @@
     padding: 6px 12px;
     border-radius: 20px;
     background-color: rgba(var(--color-primary-rgb), 0.15); 
-    color: var(--color-primary);
-    border: 1px solid var(--color-primary);
+border: 2px solid rgba(255, 0, 85, 0.3);
+    border-top-color: #ff3333;
+    border-left-color: #ff0000;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    box-shadow: 0 0 3px #ff0055, 0 0 12px #ff0055;
     font-weight: 500;
 }
 

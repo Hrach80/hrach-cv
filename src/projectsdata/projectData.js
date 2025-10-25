@@ -55,5 +55,21 @@ const projectData = [
         githubUrl: 'https://github.com/Hrach80',
         technologies: ['React.js', 'JavaScript', 'Scss', 'i18n']
     },
+    {
+        id: 8,
+        titleKey: 'project_8_title',
+        descriptionKey: 'project_8_description',
+        liveUrl: 'https://win-hrach-media.vercel.app/',
+        githubUrl: 'https://github.com/Hrach80',
+        technologies: ['React.js', 'JavaScript', 'Css']
+    },
+    {
+        id: 9,
+        titleKey: 'project_9_title',
+        descriptionKey: 'project_9_description',
+        liveUrl: 'https://hrach-react-media.vercel.app/',
+        githubUrl: 'https://github.com/Hrach80',
+        technologies: ['React.js', 'JavaScript', 'Css', 'API']
+    },
 ];
 export default projectData;
