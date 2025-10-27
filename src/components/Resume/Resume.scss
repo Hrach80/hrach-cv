@@ -1,43 +1,45 @@
 .resume {
     padding: 80px 5%;
-    background-color: var(--color-dark-background);
+    background: linear-gradient(135deg, #080808, #0b0b12, #0d1b1e);
     min-height: 100vh;
-    text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid var(--color-primary);
-    box-shadow: inset 0 0 15px var(--color-primary);
+    box-shadow: 0 0 25px rgba(0, 255, 200, 0.2), inset 0 0 20px rgba(0, 255, 150, 0.1);
+    text-align: center;
+    transition: all 0.5s ease;
 
-    &__subtitle {
-        color: var(--color-primary);
-        font-size: 1.1rem;
-        margin-bottom: 5px;
-        font-weight: 400;
+    &:hover {
+        box-shadow: 0 0 35px rgba(0, 255, 255, 0.4), inset 0 0 25px rgba(0, 255, 180, 0.2);
     }
 
     &__title {
-        color:#00ffff;
-        font-size: 2.5rem;
-        margin-bottom: 50px;
+        font-size: 3rem;
         font-weight: 700;
+        color: #00ffee;
+        margin-bottom: 50px;
+        text-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+        animation: fadeIn 1s ease forwards;
     }
 
     &__container {
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        gap: 40px;
-        animation: fadeIn 1s ease-out forwards;
+        gap: 50px;
+        animation: fadeIn 1s ease forwards;
     }
 
     &__section {
         text-align: left;
-        padding: 20px;
-        border: 1px solid var(--color-border);
-        border-radius: 10px;
-        background-color: var(--color-dark);
+        padding: 25px;
+        border-radius: 15px;
+        background-color: rgba(0, 255, 200, 0.05);
+        border: 1px solid rgba(0, 255, 150, 0.3);
+        box-shadow: 0 0 15px rgba(0, 255, 200, 0.1);
         opacity: 0;
-        animation: fadeInUp 0.8s ease-out forwards;
+        animation: fadeInSlideUp 1s ease-out forwards;
+        transition: all 0.3s ease;
 
         &:nth-child(1) {
             animation-delay: 0.2s;
@@ -54,174 +56,171 @@
         &:nth-child(4) {
             animation-delay: 0.8s;
         }
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+        }
     }
 
     &__section-title {
-        color: var(--color-primary);
-        font-size: 1.8rem;
-        margin-bottom: 25px;
+        font-size: 1rem;
+        color: #00ffee;
         display: flex;
         align-items: center;
         gap: 10px;
-        border-bottom: 2px solid rgba(var(--color-primary-rgb), 0.3);
+        margin-bottom: 20px;
+        border-bottom: 2px solid rgba(0, 255, 200, 0.3);
         padding-bottom: 10px;
+
+        svg {
+            margin-right: 5px;
+        }
     }
 }
 
 .timeline {
     position: relative;
     padding-left: 30px;
-    border-left: 2px solid var(--color-border);
-}
+    border-left: 2px solid rgba(0, 255, 200, 0.3);
 
-.timeline-item {
-    margin-bottom: 30px;
-    position: relative;
-    padding: 30px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(0, 255, 255, 0.3);
-    border-top-color: #00ffff;
-    border-left-color: #00e0e0;
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-    box-shadow: 0 0 3px #00a0a0, 0 0 10px #00ffff;
+    .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 255, 255, 0.2);
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+        transition: all 0.3s ease;
 
-    border-radius: 5px;
-    cursor: pointer;
-    transition:
-        border-color 0.8s ease-in-out,
-        border-top-color 0.8s ease-in-out,
-        border-left-color 0.8s ease-in-out,
-        box-shadow 0.8s ease-in-out;
-    &:hover {
-        border-color: rgba(255, 0, 85, 0.3);
-        border-top-color: #ff3333;
-        border-left-color: #ff0000;
-        border-bottom-color: transparent;
-        border-right-color: transparent;
-
-        box-shadow: 0 0 3px #ff0055, 0 0 12px #ff0055;
-    }
-
-    &__dot {
-        position: absolute;
-        left: -33px;
-        top: 5px;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background-color: var(--color-primary);
-        border: 3px solid var(--color-dark-background);
-        box-shadow: 0 0 5px var(--color-primary);
-    }
-
-    &__content {
-        h3 {
-            font-size: 1.4rem;
-            color: var(--color-text-light);
-            margin-bottom: 5px;
+        &:hover {
+            transform: translateX(5px);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
         }
 
-        h4 {
-            font-size: 1rem;
-            color: var(--color-text-dim);
-            font-weight: 400;
-            margin-bottom: 10px;
+        &__dot {
+            position: absolute;
+            left: -28px;
+            top: 10px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #00ffee;
+            border: 3px solid #080808;
+            box-shadow: 0 0 5px #00ffee;
         }
 
-        p {
-            font-size: 0.95rem;
-            color: var(--color-text-dim);
-            line-height: 1.5;
+        &__content {
+            h3 {
+                font-size: 1.4rem;
+                color: #00cc66;
+                margin-bottom: 5px;
+            }
+
+            h4 {
+                font-size: 1rem;
+                color: rgba(166, 161, 161, 0.7);
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 0.95rem;
+                color: rgba(255, 255, 255, 0.6);
+                line-height: 1.5;
+            }
         }
     }
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
-}
 
-.skill-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--color-text-light);
-    font-size: 1rem;
-    padding: 10px;
-    border-radius: 5px;
-    border: 3px solid rgba(0, 153, 255, 0.3);
-    border-top-color: #076eff;
-    border-left-color: #0077ff;
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-    box-shadow: 0 0 3px #00aaff, 0 0 10px #00aaff;
-    transition: transform 0.3s ease;
+    .skill-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 15px;
+        border-radius: 30px;
+        background: linear-gradient(90deg, #00ffee, #00cc66, #00ffee);
+        box-shadow: 0 0 10px rgba(0, 255, 180, 0.3);
+        color: #080808;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
 
-    &:hover {
-        transform: translateX(5px);
-    }
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+        }
 
-    .skill-icon {
-        border: 2px solid rgba(255, 0, 85, 0.3);
-        border-top-color: #ff3333;
-        border-left-color: #ff0000;
-        border-bottom-color: transparent;
-        border-right-color: transparent;
-        box-shadow: 0 0 3px #ff0055, 0 0 12px #ff0055;
-        border-radius: 50px;
+        .skill-icon {
+            color: #080808;
+            font-size: 1.2rem;
+        }
     }
 }
 
 .tools-list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-}
+    justify-content: center;
+    gap: 12px;
 
-.tool-tag {
+    .tool-tag {
+        font-size: 0.9rem;
+        padding: 8px 25px;
+        border-radius: 30px;
+        background: rgba(0, 255, 200, 0.1);
+        color: #00ffee;
+        font-weight: 500;
+        box-shadow: 0 0 8px rgba(0, 255, 200, 0.2);
+        transition: all 0.3s ease;
 
-    font-size: 0.9rem;
-    padding: 6px 30px;
-    border-radius: 5px;
-    background-color: rgba(var(--color-primary-rgb), 0.15);
-    border: 2px solid rgba(255, 0, 85, 0.3);
-    border-top-color: #ff3333;
-    border-left-color: #ff0000;
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-    box-shadow: 0 0 3px #ff0055, 0 0 12px #ff0055;
-    font-weight: 500;
-}
-
-.resume__download-box {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.download-button {
-    padding: 12px 30px;
-    background-color: var(--color-primary);
-    color: var(--color-dark);
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color var(--transition-speed);
-
-    &:hover {
-        background-color: #00cc6a;
-        color: white;
-        box-shadow: 0 0 15px rgba(var(--color-primary-rgb), 0.5);
+        &:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
     }
 }
 
-@keyframes fadeInUp {
+.resume__download-box {
+    margin-top: 30px;
+
+    .download-button {
+        display: inline-block;
+        padding: 12px 30px;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 30px;
+        background: linear-gradient(90deg, #00ffee, #00cc66);
+        color: #080808;
+        text-decoration: none;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(0, 255, 180, 0.4);
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+            color: #080808;
+        }
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSlideUp {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -233,24 +232,21 @@
     }
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .resume__container {
+        gap: 40px;
     }
 
-    to {
-        opacity: 1;
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
 
 @media (max-width: 768px) {
     .resume {
-        padding: 60px 5%;
-
-        &__title {
-            font-size: 2rem;
-            margin-bottom: 30px;
-        }
+        padding: 40px 3%;
+        border-radius: 10px;
     }
 
     .skills-grid {
@@ -262,6 +258,26 @@
     }
 
     .timeline-item__dot {
-        left: -23px;
+        left: -20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume {
+        padding: 20px 2%;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .tools-list {
+        gap: 8px;
+    }
+
+    .resume__title {
+        font-size: 2rem;
+        margin-bottom: 30px;
     }
 }
