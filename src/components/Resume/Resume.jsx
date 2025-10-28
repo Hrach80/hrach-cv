@@ -36,7 +36,7 @@ const resumeData = {
          'REST APIs',  'Git/GitHub', 'Responsive Design',
     ],
     toolsAndPlatforms: [
-        'VS Code', 'npm / yarn', 'Webpack / Vite', 'Vercel / Netlify', 'Domain Setup', 'Figma/Adobe fotoshop',"WordPress",
+        'VS Code', 'npm / yarn', 'Webpack / Vite', 'Vercel / Netlify', 'Domain Setup', 'Figma/Adobe fotoshop', "WordPress", "Supabase",
     ]
 };
 

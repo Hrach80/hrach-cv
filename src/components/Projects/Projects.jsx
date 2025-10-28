@@ -22,8 +22,6 @@ const Projects = () => {
             window.location.href = url;
         }, 1500);
     };
-
-    // ... (renderButtonContent-ը մնում է անփոփոխ)
     const renderButtonContent = (id, isGithub = false) => {
         const type = isGithub ? 'github' : 'live';
         const uniqueId = `${id}-${type}`;
@@ -42,7 +40,6 @@ const Projects = () => {
 
     return (
         <section id="projects" className="projects">
-            <h3 className="projects__subtitle">{t('projects_section_subtitle')}</h3>
             <h1 className="projects__title">{t('projects_section_title')}</h1>
 
             <div className="projects__grid">

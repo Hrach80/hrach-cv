@@ -111,6 +111,7 @@
             padding: 5px 12px;
             border-radius: 4px;
             background-color: rgba(var(--color-primary-rgb), 0.15);
+            box-shadow: 0 0 10px rgba(0, 255, 180, 0.4);
             color: var(--color-primary);
             font-weight: 500;
             transition: background 0.3s ease;
@@ -251,10 +252,7 @@
         margin-bottom: 18px;
     }
 
-    .projects__subtitle {
-        font-size: 1rem;
-        margin-bottom: 2px;
-    }
+
 
     .projects__grid {
         grid-template-columns: 1fr;

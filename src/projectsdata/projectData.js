@@ -71,5 +71,13 @@ const projectData = [
         githubUrl: 'https://github.com/Hrach80',
         technologies: ['React.js', 'JavaScript', 'Css', 'API']
     },
+    {
+        id: 10,
+        titleKey: 'project_10_title',
+        descriptionKey: 'project_10_description',
+        liveUrl: 'https://hrachya.vagharshakyan.it.com/',
+        githubUrl: 'https://github.com/Hrach80',
+        technologies: ['React.js', 'JavaScript', 'Css', 'API', 'supabase']
+    },
 ];
 export default projectData;
