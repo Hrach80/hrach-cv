@@ -51,7 +51,7 @@ const projectData = [
         id: 7,
         titleKey: 'project_7_title',
         descriptionKey: 'project_7_description',
-        liveUrl: 'https://tomas-sweet.vercel.app/',
+        liveUrl: 'https://tom.vagharshakyan.it.com/',
         githubUrl: 'https://github.com/Hrach80',
         technologies: ['React.js', 'JavaScript', 'Scss', 'i18n']
     },
