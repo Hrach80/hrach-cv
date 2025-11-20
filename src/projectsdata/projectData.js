@@ -3,7 +3,7 @@ const projectData = [
         id: 1,
         titleKey: 'project_1_title',
         descriptionKey: 'project_1_description',
-        liveUrl: 'https://vercel-link-1.com',
+        liveUrl: 'https://varujan.vagharshakyan.it.com',
         githubUrl: 'https://github.com/your-repo-1',
         technologies: ['React', 'SCSS', 'i18n']
     },
